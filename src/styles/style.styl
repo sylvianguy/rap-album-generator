@@ -1,0 +1,214 @@
+@import "_starter"
+
+$yellow = #F5E63D
+$ll-Blue = #9BF0E9
+$darkBlue = #3CC8CD
+$black = #292929
+$lightGrey = #EDFCFB
+$pink = #EE5D88
+$twitterBlue = #52A9EA
+
+@font-face
+    font-family urbanFont
+    src url('../fonts/Tobec_.ttf')
+
+a 
+	text-decoration none
+	&:hover
+		cursor pointer
+
+body 
+	// font-family: 'Muli', sans-serif
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight 700
+	line-height 1.1
+
+h2
+	font-size 4.2em
+	text-align center
+	margin-top 100px
+	padding 20px
+	color $black
+	&.whiteBG
+		background white
+		// font-family urbanFont
+		
+	&.hide
+		display none
+	&.show
+		display block
+		padding 7px
+	
+h3
+	font-size 3.1em
+	text-align center
+	padding 0 0 20px 0
+	color $darkBlue
+
+
+.buttonContainer
+	text-align center
+.buttonStyle
+	margin 6vh auto
+	outline none
+	font-size 2.5em
+	padding 6px 25px
+	border none
+	background-color $yellow
+	border-bottom 6px solid #DFCE16
+	border-radius 11px
+	font-weight 400
+	color white
+	display inline-block
+	text-align center
+	margin 0 auto
+	position relative
+	top 0
+	transition all 0.2s
+	&:active 
+		border-bottom 1px solid #DFCE16
+		top 3px
+.buttonTwo
+	margin-right 10px
+header 
+	width 100%
+	height 100vh
+	background-image: linear-gradient(45deg, rgba(155,240,233, 0.5) 1%, rgba(155,240,233, 0.5) 100%), linear-gradient(-45deg, #20D5C6 0%, rgba(237,252,251, 0.5) 80%);
+	display flex
+	align-items center
+	justify-content center
+	.textContainer
+		text-align center
+		max-width 635px
+		margin 0 auto
+		padding 20px
+		position relative
+		font-family urbanFont
+		font-size 2.7em
+		&:after
+			content ""
+			position absolute
+			width: 673px;
+			height: 204px;
+			top: -23px;
+			left: -23px;
+			
+.wrapper
+	max-width 900px
+	margin 0 auto
+	
+section
+	height 100vh
+	width 100%
+	display: flex;
+	align-items: center
+	justify-content: center
+.section--rapName,
+.section--rapAlbumArt
+	background $lightGrey
+
+.section--rapTitle
+	background $ll-Blue
+
+.section--rapAlbumArt
+	#albumImage
+		text-align center
+		
+	#randomImg 
+		width 100%
+		height 300px
+		margin-top 70px
+	.albumArtContainer
+		position relative
+		max-width 350px
+		margin 0 auto
+		a.hi
+			background $twitterBlue
+		.accessories 
+			display none
+			&.show 
+				display inline-block
+				position absolute
+				left -122px
+				top 59px
+				width 118px
+				height 314px
+				padding-top 21px
+		.titleNameTextImg,
+		.rapNameTextImg
+			font-size 2em
+			position absolute
+			top 0
+			left 0
+			text-align left
+			&:hover
+				cursor move
+		.titleNameTextImg
+			top 60px
+		h4
+			color $black
+			display none
+			&.show
+				display block
+
+		
+		
+.crown
+	text-align center
+	position relative
+	top 25px
+	lef: 0
+	transform rotate(12deg);
+	svg
+		width 150px
+		fill $black
+	
+svg.draggable
+	fill $pink
+	width 80px
+	&:hover
+		cursor move
+	&.crownIcon
+		transform rotate(12deg)
+	&.dollarSign
+		fill $yellow
+	&.peaceSign
+		fill $ll-Blue
+
+.headerText
+	color $black
+	// font-family: 'Amatic SC', cursive
+	line-height 1
+
+
+img 
+	max-width 100%
+	height 100%
+	object-fit cover
+
+
+footer 
+	background $black
+	padding 30px 0
+	color white
+	display flex
+	text-align center
+	.footerLogo
+		width 30px
+		fill $yellow
+	p 
+		margin 0
+		// float left
+		
+
+
+
+
+
+
+
+
+
+
+
+
